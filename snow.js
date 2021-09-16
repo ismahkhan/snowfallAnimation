@@ -1,11 +1,12 @@
 class Snow{
-    constructor(x,y,r) {
+    constructor(x,y,) {
         var options = {
             restitution:0.4
         }
-        this.r = r;
+       
         this.image=loadImage("snow4.webp");
-        this.body = Bodies.circle(x,y,r,options);
+        this.body = Bodies.circle(x,y,15,options);
+         this.r = 50;
         World.add(world,this.body);
 
     }
