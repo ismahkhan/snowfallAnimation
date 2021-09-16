@@ -20,7 +20,7 @@ function draw() {
   background(backgroundImg);  
 
     if( frameCount% 20 === 0){
-    snow.push(new Snow(random(width/2-700, width/2+700),10,10));
+    snow.push(new Snow(random(width/2-700, width/2+700),10));
     }
 
     for(var i = 0; i < snow.length; i++){
